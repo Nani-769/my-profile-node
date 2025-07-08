@@ -5,7 +5,6 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
 app.use(cors({
    origin: '*'                                //origin: 'https://my-profilo-zeta.vercel.app', // Replace with your actual portfolio domain
 }));
@@ -35,11 +34,11 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: "rellaramu769@gmail.com",
-    pass: "Ram@845769",
+    pass: "gkxz qlza avvi kiqd",
   },
 });
 
-app.get('/', (req, res) => {
+app.get('/sai', (req, res) => {
   res.send('Welcome to the Contact API'); 
 }
 );
