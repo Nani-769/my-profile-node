@@ -6,6 +6,9 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors());
+app.use(cors({
+  origin: 'https://your-portfolio-domain.com', // Replace with your actual portfolio domain
+}));
 app.use(express.json());
 
 // Connect to MongoDB Atlas
