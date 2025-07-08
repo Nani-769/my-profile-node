@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(cors({
-  origin: 'https://my-profilo-zeta.vercel.app/', // Replace with your actual portfolio domain
+   origin: '*'                                //origin: 'https://my-profilo-zeta.vercel.app', // Replace with your actual portfolio domain
 }));
 app.use(express.json());
 
